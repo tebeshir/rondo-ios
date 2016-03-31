@@ -1,0 +1,6 @@
+framework module Pods_rondo {
+  umbrella header "Pods-rondo-umbrella.h"
+
+  export *
+  module * { export * }
+}
