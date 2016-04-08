@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6E31EB767A0F8F29A4F311F1'
+               BlueprintIdentifier = '036CCAC5537DDC864CAB881B'
                BlueprintName = 'Pods-rondo'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_rondo.framework'>

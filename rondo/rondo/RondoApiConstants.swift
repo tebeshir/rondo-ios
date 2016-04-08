@@ -16,6 +16,9 @@ extension RondoApiClient {
         // AGGRO
         static let AggroApiURL : String = "https://aggro-api.cfapps.io/aggro/"
         
+        // RONDO
+        static let RondoAPI : String = "http://rondo-api-test.herokuapp.com/"
+        
         // MARK: API Key
         static let ApiKey : String = "53458e624397a1be92da00f2ecdd0de9"
         
@@ -30,6 +33,9 @@ extension RondoApiClient {
     
     // MARK: - Methods
     struct Methods {
+        
+        // RONDO
+        static let GetAllUsers = "rondo/users"
         
         // AGGRO
         static let AggroLogin = "user/login"

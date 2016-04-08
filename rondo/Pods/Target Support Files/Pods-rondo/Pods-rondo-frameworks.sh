@@ -89,6 +89,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-rondo/FBSDKCoreKit.framework"
   install_framework "Pods-rondo/FBSDKLoginKit.framework"
   install_framework "Pods-rondo/FBSDKShareKit.framework"
+  install_framework "Pods-rondo/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-rondo/Alamofire.framework"
@@ -96,4 +97,5 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-rondo/FBSDKCoreKit.framework"
   install_framework "Pods-rondo/FBSDKLoginKit.framework"
   install_framework "Pods-rondo/FBSDKShareKit.framework"
+  install_framework "Pods-rondo/SwiftyJSON.framework"
 fi

@@ -8,10 +8,33 @@
 
 import UIKit
 import Foundation
+import Alamofire
+import SwiftyJSON
 
 // MARK: - Convenient Resource Methods
 
 extension RondoApiClient {
+    
+    
+    func getUsers() {
+        
+        print("URL: ", RondoApiClient.Constants.RondoAPI + RondoApiClient.Methods.GetAllUsers);
+        
+        Alamofire.request(.GET, RondoApiClient.Constants.RondoAPI + RondoApiClient.Methods.GetAllUsers) .responseJSON { response in // 1
+            print(response.request)  // original URL request
+            print(response.response) // URL response
+            print(response.data)     // server data
+            print(response.result)   // result of response serialization
+            
+            if let JSON = response.result.value {
+                print("JSON: \(JSON)")
+            }
+            
+        }
+        
+    }
+    
+    
     
     /*
     

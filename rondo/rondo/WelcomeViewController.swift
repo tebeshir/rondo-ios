@@ -19,6 +19,8 @@ class WelcomeViewController: UIViewController, FBSDKLoginButtonDelegate {
     }()
     */
     
+    var RondoClient = RondoApiClient.sharedInstance();
+    
     @IBOutlet weak var FBLoginButton: FBSDKLoginButton!
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
@@ -27,6 +29,9 @@ class WelcomeViewController: UIViewController, FBSDKLoginButtonDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        print("getUsers start");
+        RondoClient.getUsers();
+        print("getUsers end");
         
         if (FBSDKAccessToken.currentAccessToken() != nil) {
             fetchProfile()
